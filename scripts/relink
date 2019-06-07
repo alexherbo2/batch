@@ -1,0 +1,5 @@
+#!/bin/sh
+
+target_directory=$(dirname "$2")
+mkdir -p "$target_directory"
+ln "$1" "$2"

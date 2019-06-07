@@ -1,0 +1,7 @@
+#!/bin/sh
+
+source_directory=$(dirname "$1")
+target_directory=$(dirname "$2")
+mkdir -p "$target_directory"
+mv "$1" "$2"
+rmdir -p "$source_directory" 2> /dev/null

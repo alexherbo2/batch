@@ -1,0 +1,6 @@
+#!/bin/sh
+
+source_directory=$(dirname "$1")
+target_directory=$(dirname "$2")
+mkdir -p "$target_directory"
+ffmpeg -i "$1" "$2"
