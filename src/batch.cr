@@ -73,7 +73,7 @@ def main
       map.arguments << [input, output]
     end
   end
-  something_to_do? = false
+  something_to_do = false
   shell_file = File.tempfile("output", ".sh") do |file|
     file.puts <<-EOF
     # This file will be executed when you close the editor.
@@ -83,7 +83,7 @@ def main
       if command.body.nil? || command.arguments.empty?
         next
       end
-      something_to_do? = true
+      something_to_do = true
       # Add an empty line
       file.puts <<-EOF
 
@@ -98,7 +98,7 @@ def main
     end
   end
   at_exit { shell_file.delete }
-  if ! something_to_do?
+  if ! something_to_do
     STDERR.puts "Nothing to do"
     exit
   end
