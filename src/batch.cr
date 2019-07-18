@@ -75,7 +75,7 @@ def main
   end
   something_to_do = false
   shell_file = File.tempfile("output", ".sh") do |file|
-    file.puts <<-EOF
+    file.puts <<-'EOF'
     # This file will be executed when you close the editor.
     # Please double-check everything, clear the file to abort.
     EOF
