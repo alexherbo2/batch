@@ -1,6 +1,7 @@
 # Batch
 
 [![Build Status](https://travis-ci.org/alexherbo2/batch.svg)](https://travis-ci.org/alexherbo2/batch)
+[![IRC](https://img.shields.io/badge/IRC-%23batch-blue)](https://webchat.freenode.net/#batch)
 
 ###### [Usage](#usage) | [Configuration](#configuration) | [Options](#options) | [Contributing](CONTRIBUTING)
 
