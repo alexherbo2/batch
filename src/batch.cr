@@ -18,6 +18,10 @@ struct Command
   end
 end
 
+macro version
+  {{ `git describe --tags --always`.stringify }}
+end
+
 def main
   options = Options.new
   OptionParser.parse! do |parser|
@@ -27,6 +31,7 @@ def main
     parser.on("-d COMMAND", "--drop=COMMAND", "Run command on deleted elements") { |command| options.drop = command }
     parser.on("--editor=COMMAND", %(Configure editor.  If command contains spaces, command must include "${@}" (including the quotes) to receive the argument list.)) { |command| options.editor = command }
     parser.on("--no-confirm", "Do not ask for confirmation") { options.confirm = false }
+    parser.on("-v", "--version", "Display version number and quit") { puts version; exit }
     parser.on("-h", "--help", "Display a help message and quit") { puts parser; exit }
     parser.invalid_option do |flag|
       STDERR.puts "Error: Unknown option: #{flag}"

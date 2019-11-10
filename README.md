@@ -20,6 +20,8 @@ make build # Build bin/batch
 make install # Install bin/batch and scripts into ~/.local/bin
 ```
 
+You can download [binary release](https://github.com/alexherbo2/batch/releases) for your OS.
+
 ## Usage
 
 ``` sh
@@ -122,6 +124,9 @@ alias rl=batch_relink
 
 --no-confirm
   Do not ask for confirmation.
+
+--version / -v
+  Display version number and quit
 
 --help / -h
   Display a help message and quit.
