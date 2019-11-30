@@ -5,7 +5,7 @@
 
 ###### [Usage](#usage) | [Configuration](#configuration) | [Options](#options) | [Contributing](CONTRIBUTING)
 
-> Command-line program for batch processing.
+> Command-line program for [batch processing].
 
 [![Batch demo](https://img.youtube.com/vi_webp/QN4mrZXYHPo/maxresdefault.webp)](https://youtu.be/QN4mrZXYHPo)
 
@@ -132,6 +132,7 @@ alias rl=batch_relink
   Display a help message and quit.
 ```
 
+[Batch processing]: https://en.wikipedia.org/wiki/Batch_processing
 [Crystal]: https://crystal-lang.org
 [Star Platinum]: https://jojo.fandom.com/wiki/Star_Platinum
 [Magician’s Red]: https://jojo.fandom.com/wiki/Magician's_Red
