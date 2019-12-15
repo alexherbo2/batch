@@ -24,7 +24,7 @@ end
 
 def main
   options = Options.new
-  OptionParser.parse! do |parser|
+  OptionParser.parse(ARGV) do |parser|
     parser.banner = "Usage: batch [arguments]"
     parser.on("-p COMMAND", "--pick=COMMAND", "Run command on unchanged elements") { |command| options.pick = command }
     parser.on("-m COMMAND", "--map=COMMAND", "Run command on modified elements") { |command| options.map = command }
