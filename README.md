@@ -7,7 +7,7 @@
 
 > Command-line program for [batch processing].
 
-[![Batch demo](https://img.youtube.com/vi_webp/QN4mrZXYHPo/maxresdefault.webp)](https://youtu.be/QN4mrZXYHPo)
+[![Batch demo](https://img.youtube.com/vi_webp/QN4mrZXYHPo/maxresdefault.webp)](https://youtu.be/QN4mrZXYHPo "YouTube – Batch demo")
 
 ## Dependencies
 
