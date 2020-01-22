@@ -127,7 +127,7 @@ alias rl=batch_relink
   Do not ask for confirmation.
 
 --version / -v
-  Display version number and quit
+  Display version number and quit.
 
 --help / -h
   Display a help message and quit.
