@@ -1,7 +1,8 @@
 #!/bin/sh
 
+cat "$@" |
 while read file; do
   directory=$(dirname "$file")
   mkdir -p "build/$directory"
   touch "build/$file"
-done < "$1"
+done
