@@ -1,44 +1,36 @@
 # Alternatives
 
-<details>
-
-<summary>Status</summary>
-
-- **Active**
-    - [⚓](#vidir) [vidir]
-    - [⚓](#massren) [massren]
-
-</details>
-
-<!----------------------------------------------------------------------------->
-
-## [vidir]
-
-- **Description**: vidir allows editing of the contents of a directory in a text editor.
-- **Aired**: 2011-10-22 → Present
-- **Status**: Active
-- **Languages**: [perl]
-- **License**: [GPL-3.0]
-- **Repository**: https://github.com/trapd00r/vidir
-- **Notes**:
-    - Less flexibility, a removed line always corresponds to a removed file and a changed line always corresponds to a renamed file.
+- [massren](#massren)
+- [vidir](#vidir)
 
 ## [massren]
 
-- **Description**: Command line tool that can be used to rename multiple files using your own text editor.
+- **Description**: Rename files in a text editor.
 - **Aired**: 2014-03-17 → Present
 - **Status**: Active
-- **Languages**: [go]
+- **Languages**: [Go]
 - **License**: [MIT]
+- **Website**: https://github.com/laurent22/massren
 - **Repository**: https://github.com/laurent22/massren
+- **Notes**:
+  - Undo feature
 
-
-[vidir]: https://github.com/trapd00r/vidir
 [massren]: https://github.com/laurent22/massren
 
-[perl]: https://www.perl.org/
-[go]: https://golang.org/
+## [vidir]
+
+- **Description**: Rename and delete files in a text editor.
+- **Aired**: 2011-10-22 → Present
+- **Status**: Active
+- **Languages**: [Perl]
+- **License**: [GPL-3.0]
+- **Website**: https://github.com/trapd00r/vidir
+- **Repository**: https://github.com/trapd00r/vidir
+
+[vidir]: https://github.com/trapd00r/vidir
+
+[Go]: https://golang.org
+[Perl]: https://perl.org
 
 [GPL-3.0]: https://opensource.org/licenses/GPL-3.0
 [MIT]: https://opensource.org/licenses/MIT
-
