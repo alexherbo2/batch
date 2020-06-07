@@ -7,8 +7,8 @@
 
 Batch is a command-line program for [batch processing].
 
-[![Batch demo](https://img.youtube.com/vi_webp/QN4mrZXYHPo/maxresdefault.webp)](https://youtu.be/QN4mrZXYHPo "YouTube – Batch demo")
-[![YouTube Play Button](https://www.iconfinder.com/icons/317714/download/png/16)](https://youtu.be/QN4mrZXYHPo) · [Batch demo](https://youtu.be/QN4mrZXYHPo)
+[![Batch](https://img.youtube.com/vi_webp/QN4mrZXYHPo/maxresdefault.webp)](https://youtube.com/playlist?list=PLdr-HcjEDx_lm0zBEKMkTtA2bWJFXkjnS "YouTube – Batch")
+[![YouTube Play Button](https://www.iconfinder.com/icons/317714/download/png/16)](https://youtube.com/playlist?list=PLdr-HcjEDx_lm0zBEKMkTtA2bWJFXkjnS) · [Batch](https://youtube.com/playlist?list=PLdr-HcjEDx_lm0zBEKMkTtA2bWJFXkjnS)
 
 ## Dependencies
 
