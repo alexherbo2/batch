@@ -5,6 +5,8 @@
 
 ###### [Usage](#usage) | [Configuration](#configuration) | [Options](#options) | [Contributing](CONTRIBUTING)
 
+<img src="https://github.com/FortAwesome/Font-Awesome/raw/master/svgs/solid/robot.svg" height="16" align="right">
+
 Batch is a command-line program for [batch processing].
 
 [![Batch](https://img.youtube.com/vi_webp/QN4mrZXYHPo/maxresdefault.webp)](https://youtube.com/playlist?list=PLdr-HcjEDx_lm0zBEKMkTtA2bWJFXkjnS "YouTube – Batch")
