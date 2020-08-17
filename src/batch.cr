@@ -24,21 +24,28 @@ end
 
 def main
   options = Options.new
-  OptionParser.parse(ARGV) do |parser|
+  option_parser = OptionParser.new do |parser|
     parser.banner = "Usage: batch [arguments]"
     parser.on("-p COMMAND", "--pick=COMMAND", "Run command on unchanged elements") { |command| options.pick = command }
     parser.on("-m COMMAND", "--map=COMMAND", "Run command on modified elements") { |command| options.map = command }
     parser.on("-d COMMAND", "--drop=COMMAND", "Run command on deleted elements") { |command| options.drop = command }
     parser.on("--editor=COMMAND", %(Configure editor.  If command contains spaces, command must include "${@}" (including the quotes) to receive the argument list.)) { |command| options.editor = command }
     parser.on("--no-confirm", "Do not ask for confirmation") { options.confirm = false }
-    parser.on("-v", "--version", "Display version number and quit") { puts version; exit }
-    parser.on("-h", "--help", "Display a help message and quit") { puts parser; exit }
+    parser.on("-v", "--version", "Display version number and quit") do
+      puts version
+      exit
+    end
+    parser.on("-h", "--help", "Display a help message and quit") do
+      puts parser
+      exit
+    end
     parser.invalid_option do |flag|
       STDERR.puts "Error: Unknown option: #{flag}"
       STDERR.puts parser
       exit(1)
     end
   end
+  option_parser.parse(ARGV)
   if { options.pick, options.map, options.drop }.all? &.nil?
     options.pick = %(echo pick "$1")
     options.map = %(echo map "$1" → "$2")
