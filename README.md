@@ -25,6 +25,12 @@ make install # Install bin/batch and scripts into ~/.local/bin
 
 You can download [binary release](https://github.com/alexherbo2/batch/releases) for your OS.
 
+### Editor integration
+
+- [Kakoune][batch.kak]
+
+[batch.kak]: https://github.com/alexherbo2/batch.kak
+
 ## Usage
 
 ``` sh
