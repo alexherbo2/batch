@@ -12,5 +12,5 @@ test:
 	crystal spec
 
 clean:
-	rm -Rf bin
+	rm -Rf bin lib shard.lock
 	cd examples; make clean

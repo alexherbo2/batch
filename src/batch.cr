@@ -1,3 +1,4 @@
+require "shell-escape"
 require "option_parser"
 
 struct Options
@@ -103,9 +104,12 @@ def main
         #{command.body}
       }
       EOF
-      command.arguments.each do |arguments|
-        arguments = arguments.map(&.shell_escape).join(" ")
-        file.puts command.name + " " + arguments
+
+      # Build shell commands
+      command.arguments.map do |arguments|
+        shell_command = ShellEscape.escape([command.name] + arguments)
+
+        file.puts(shell_command)
       end
     end
   end
@@ -118,12 +122,6 @@ def main
     system(options.editor, { shell_file.path })
   end
   system("sh", { shell_file.path })
-end
-
-class String
-  def shell_escape
-    "'" + self.gsub("'", %('"'"')) + "'"
-  end
 end
 
 main

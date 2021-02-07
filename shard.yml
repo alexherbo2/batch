@@ -4,3 +4,6 @@ license: Unlicense
 targets:
   batch:
     main: src/batch.cr
+dependencies:
+  shell-escape:
+    github: alexherbo2/shell-escape
