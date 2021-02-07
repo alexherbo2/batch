@@ -2,20 +2,19 @@ require "shell-escape"
 require "option_parser"
 
 struct Options
-  property pick
-  property map
-  property drop
-  property editor
-  property confirm
-  def initialize(@pick : String? = nil, @map : String? = nil, @drop : String? = nil, @editor = ENV["EDITOR"], @confirm = true)
-  end
+  property pick : String?
+  property map : String?
+  property drop : String?
+  property editor = ENV["EDITOR"]
+  property confirm = true
 end
 
 struct Command
-  property name
-  property body
-  property arguments
-  def initialize(@name : String, @body : String?, @arguments = [] of Array(String))
+  property name : String
+  property body : String?
+  property arguments = Array(Array(String)).new
+
+  def initialize(@name, @body)
   end
 end
 
