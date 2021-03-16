@@ -2,7 +2,7 @@
 
 [![IRC](https://img.shields.io/badge/IRC-%23batch-blue)](https://webchat.freenode.net/#batch)
 
-###### [Usage](#usage) | [Configuration](#configuration) | [Options](#options) | [Contributing](CONTRIBUTING)
+###### [Installation] | [Usage] | [Configuration] | [Options]
 
 <img src="https://github.com/FortAwesome/Font-Awesome/raw/master/svgs/solid/robot.svg" height="16" align="right">
 
@@ -16,6 +16,8 @@ Batch is a command-line program for [batch processing].
 - [Crystal]
 
 ## Installation
+
+[Installation]: #installation
 
 ### Nightly builds
 
@@ -38,6 +40,8 @@ make install
 [batch.kak]: https://github.com/alexherbo2/batch.kak
 
 ## Usage
+
+[Usage]: #usage
 
 ``` sh
 batch
@@ -102,6 +106,8 @@ After you close it, it will be executed.
 
 ## Configuration
 
+[Configuration]: #configuration
+
 ``` sh
 batch_rename() {
   batch --map 'rename "$1" "$2"' "$@"
@@ -121,6 +127,8 @@ alias rl=batch_relink
 ```
 
 ## Options
+
+[Options]: #options
 
 ```
 --pick / -p command
