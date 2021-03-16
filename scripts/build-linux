@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker build --tag batch .
+docker run --mount "type=bind,source=$PWD,destination=/app" batch

@@ -1,6 +1,5 @@
 # Batch
 
-[![Build Status](https://travis-ci.org/alexherbo2/batch.svg)](https://travis-ci.org/alexherbo2/batch)
 [![IRC](https://img.shields.io/badge/IRC-%23batch-blue)](https://webchat.freenode.net/#batch)
 
 ###### [Usage](#usage) | [Configuration](#configuration) | [Options](#options) | [Contributing](CONTRIBUTING)
@@ -18,12 +17,19 @@ Batch is a command-line program for [batch processing].
 
 ## Installation
 
-``` sh
-make build # Build bin/batch
-make install # Install bin/batch and scripts into ~/.local/bin
-```
+### Nightly builds
 
-You can download [binary release](https://github.com/alexherbo2/batch/releases) for your OS.
+Download the [Nightly builds].
+
+[Nightly builds]: https://github.com/alexherbo2/batch/releases/nightly
+
+### Build from source
+
+Run the following in your terminal:
+
+``` sh
+make install
+```
 
 ### Editor integration
 

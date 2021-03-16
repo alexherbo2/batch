@@ -1,4 +1,5 @@
 bin
 build
 lib
+releases
 shard.lock

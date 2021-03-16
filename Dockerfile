@@ -1,5 +1,4 @@
-FROM alpine:edge
-RUN apk add --update crystal shards libc-dev upx
+FROM alpine
+RUN apk add --update make crystal shards libc-dev
 WORKDIR /app
-CMD shards build --release --static --no-debug && \
-  strip --strip-all bin/batch && upx --best bin/batch
+CMD make static=yes
