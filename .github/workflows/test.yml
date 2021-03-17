@@ -15,7 +15,7 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            install-packages: sudo snap install crystal
+            install-packages: sudo snap install crystal --classic
           - os: macos-latest
             install-packages: brew install crystal
     runs-on: ${{ matrix.os }}
