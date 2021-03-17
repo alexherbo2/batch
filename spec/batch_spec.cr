@@ -1,7 +1,7 @@
 require "spec"
 require "yaml"
 
-path = File.join(ENV["PWD"], "bin")
+path = File.join(__DIR__, "..", "bin")
 ENV["PATH"] = path + ":" + ENV["PATH"]
 
 describe "Batch" do
