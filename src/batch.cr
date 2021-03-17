@@ -1,5 +1,6 @@
 require "shell-escape"
 require "option_parser"
+require "./env"
 
 struct Options
   property pick : String?
