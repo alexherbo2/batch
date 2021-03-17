@@ -11,27 +11,10 @@ on: [push, pull_request]
 jobs:
   test:
     name: Run tests
-    strategy:
-      matrix:
-        include:
-          - os: ubuntu-latest
-            target: x86_64-unknown-linux-musl
-            install-packages: |
-              sudo apt install libyaml-dev
-              sudo snap install crystal --classic
-          - os: macos-latest
-            target: x86_64-apple-darwin
-            install-packages: brew install crystal
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install packages
-        run: ${{ matrix.install-packages }}
-
-      - name: Build
-        run: make ${{ matrix.target }}
-
-      - name: Run tests
-        run: make test
+      - name: Build and run tests
+        run: scripts/docker-run make build test
