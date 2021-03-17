@@ -26,7 +26,7 @@ install: build
 uninstall:
 	rm -f ~/.local/bin/batch ~/.local/bin/rename ~/.local/bin/convert ~/.local/bin/relink
 
-test: build
+test:
 	crystal spec
 
 clean:

@@ -15,8 +15,10 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            install-packages: sudo snap install crystal --classic
+            target: x86_64-unknown-linux-musl
+            install-packages:
           - os: macos-latest
+            target: x86_64-apple-darwin
             install-packages: brew install crystal
     runs-on: ${{ matrix.os }}
     steps:
@@ -26,5 +28,8 @@ jobs:
       - name: Install packages
         run: ${{ matrix.install-packages }}
 
+      - name: Build
+        run: make ${{ matrix.target }}
+
       - name: Run tests
-        run: make test flags=--ignore-crystal-version
+        run: make test
