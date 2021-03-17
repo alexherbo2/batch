@@ -1,0 +1,30 @@
+# GitHub Actions
+# https://github.com/features/actions
+
+# GitHub CLI
+# https://cli.github.com
+
+name: Test CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Run tests
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            install-packages: sudo snap install crystal
+          - os: macos-latest
+            install-packages: brew install crystal
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install packages
+        run: ${{ matrix.install-packages }}
+
+      - name: Run tests
+        run: make test
