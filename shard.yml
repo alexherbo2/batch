@@ -1,5 +1,6 @@
 name: batch
 version: 0.1.0
+crystal: 1.0.0
 license: Unlicense
 targets:
   batch:
