@@ -20,11 +20,11 @@ release: $(target)
 	zip -r releases/$(name)-$(version)-$(target).zip bin share
 
 install: build
-	mkdir -p ~/.local/bin
-	ln -sf "${PWD}/bin/batch" "${PWD}/share/batch/scripts/rename" "${PWD}/share/batch/scripts/convert" "${PWD}/share/batch/scripts/relink" ~/.local/bin
+	install -d ~/.local/bin
+	install bin/batch share/batch/scripts/* ~/.local/bin
 
 uninstall:
-	rm -f ~/.local/bin/batch ~/.local/bin/rename ~/.local/bin/convert ~/.local/bin/relink
+	rm -f ~/.local/bin/batch
 
 test:
 	crystal spec
